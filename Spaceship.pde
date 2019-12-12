@@ -7,8 +7,8 @@ class Spaceship extends Floater
     	int[] ys = {-8, 0, 8, 0};
     	xCorners= xs;
     	yCorners =ys;
-    	myColor = color(255,255,255);
-    	myCenterX=200;
+    	myColor = color(255,255,0);
+    	myCenterX=400;
     	myCenterY=400;
     	myDirectionX=0;
     	myDirectionY =0;
@@ -29,12 +29,20 @@ class Spaceship extends Floater
     public void setPointDirection(double n){
     	myPointDirection=n;
     }
-    
     public float getCenterX(){
         return (float)myCenterX;
     }
     public float getCenterY(){
         return (float)myCenterY;
+    }
+    public float getDirectionX(){
+        return (float)myDirectionX;
+    }
+    public float getDirectionY(){
+        return (float)myDirectionY;
+    }
+    public float getPointDirection(){
+        return (float)myPointDirection;
     }
     
 }
