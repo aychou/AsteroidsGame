@@ -2,7 +2,7 @@ Spaceship hi;
 Star[] starz = new Star[200];
 ArrayList<Asteroid> bye = new ArrayList<Asteroid>();
 float distance;
-float dist;
+float dista;
 int later = 0;
 ArrayList<Bullet> z = new ArrayList<Bullet>();
 //your variable declarations here
@@ -53,8 +53,8 @@ public void draw()
 		}
 			for(int b =0; b<z.size(); b++)
 			{
-				dist = (float)(dist((float)(bye.get(i).getCenterX()), (float)(bye.get(i).getCenterY()), (float)(z.get(b).getCenterX()), (float)(z.get(b).getCenterY())));
-				if(dist <= 30)
+				dista = (float)(dist((float)(bye.get(i).getCenterX()), (float)(bye.get(i).getCenterY()), (float)(z.get(b).getCenterX()), (float)(z.get(b).getCenterY())));
+				if(dista <= 30)
 				{
 					bye.remove(i);
 					z.remove(b);
